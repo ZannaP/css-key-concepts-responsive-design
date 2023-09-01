@@ -12,7 +12,9 @@ body {
 h1 {
   font-size: 2.25rem;
 }
-
+.cat--ipsum {
+  display: none;
+}
 .card {
   padding: 10px;
   margin: 10px;
@@ -25,4 +27,30 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  body {
+    background-color: var(--camel);
+  }
+  .cat--ipsum {
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+  body {
+    background-color: var(--teal);
+    color: var(--light);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark);
+    color: var(--light);
+  }
 }
